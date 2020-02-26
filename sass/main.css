@@ -109,73 +109,82 @@ body .main .blog a:hover .medium {
   background-color: #000000;
 }
 
-body .footer {
+body footer {
   -webkit-animation: example 5s;
           animation: example 5s;
   position: fixed;
-  bottom: 0;
+  bottom: 70px;
   width: 100%;
 }
 
-body .footer .social {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+body footer .social {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 50px;
   display: flex;
 }
 
-body .footer .social #linkedin, body .footer .social #envelope, body .footer .social #twitter {
+body footer .social #linkedin, body footer .social #envelope, body footer .social #twitter, body footer .social #github {
   opacity: .6;
 }
 
-body .footer .social #instagram-gradient,
-body .footer .social #github-gradient,
-body .footer .social #youtube-gradient {
+body footer .social #instagram-gradient,
+body footer .social #github-gradient,
+body footer .social #youtube-gradient {
   opacity: 0.0;
   display: inline-block;
   -webkit-transition: opacity .5s ease;
   transition: opacity .5s ease;
 }
 
-body .footer .social svg, body .footer .social g, body .footer .social path {
+body footer .social svg, body footer .social g, body footer .social path {
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
 }
 
-body .footer .social a {
+body footer .social a {
   text-decoration: none;
   padding: 20px;
 }
 
-body .footer .social a:hover #instagram-gradient,
-body .footer .social a:hover #github-gradient,
-body .footer .social a:hover #youtube-gradient {
+body footer .social a:hover #instagram-gradient,
+body footer .social a:hover #github-gradient,
+body footer .social a:hover #youtube-gradient {
   opacity: 1.0;
 }
 
-body .footer .social a:hover #envelope {
-  fill: #e0720c;
+body footer .social a:hover #envelope {
+  fill: #af641d;
   opacity: 1.0;
 }
 
-body .footer .social a:hover #twitter {
+body footer .social a:hover #twitter {
   fill: #1da1f2;
   opacity: 1.0;
 }
 
-body .footer .social a:hover #linkedin {
+body footer .social a:hover #linkedin {
   fill: #0077B5;
   opacity: 1.0;
+}
+
+@media (max-width: 900px) {
+  body {
+    width: 100%;
+    height: 100%;
+    min-width: 100px;
+    padding: 0;
+  }
+  body footer ul {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
 }
 
 @media (max-width: 720px) {
@@ -197,12 +206,9 @@ body .footer .social a:hover #linkedin {
   body .main .blog svg, body .main .blog g, body .main .blog path {
     height: 45px;
   }
-  footer li {
-    width: 60px;
-    margin: 0 0 40px 0;
-  }
-  footer li svg, footer li g, footer li path {
-    height: 40px;
+  footer ul {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
   }
 }
 
@@ -223,12 +229,9 @@ body .footer .social a:hover #linkedin {
     width: 45px;
     height: 35px;
   }
-  footer li {
-    width: 60px;
-    margin: 0 0 70px 0;
-  }
-  footer li svg, footer li g, footer li path {
-    width: 35px;
+  body footer ul {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
   }
 }
 

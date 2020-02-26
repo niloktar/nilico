@@ -67,19 +67,17 @@ body {
 				}
 			}
 		}
-		.footer {
+		footer {
 			animation: example 5s;
 			position: fixed;
-			bottom: 0;
+			bottom: 70px;
 			width: 100%;
 			.social {
-				align-items: center;
-				display: flex;
 				align-items: flex-end;
-				justify-content: center;
-				margin-bottom: 50px;
 				display: flex;
-				#linkedin, #envelope, #twitter {
+				justify-content: center;
+				display: flex;
+				#linkedin, #envelope, #twitter, #github{
 					opacity: .6;
 				}
 				#instagram-gradient,
@@ -105,7 +103,7 @@ body {
 								opacity: 1.0;
 							  }
 							 #envelope {
-								fill: rgb(224, 114, 12);
+								fill: rgb(175, 100, 29);
 								opacity: 1.0;
 							}
 							#twitter {
@@ -122,6 +120,13 @@ body {
 			}
 	}
 	//media query
+	@media (max-width: 900px) 
+	{
+		body {
+			width:100%; height: 100%; min-width:100px; padding:0;
+		footer { ul {transform: scale(.8);}}
+		}
+	}
 	@media (max-width: 720px) 
 	{
 		body {
@@ -131,21 +136,22 @@ body {
 			.blog { svg,g,path { height: 45px;} } 
 			}
 		} 
-		footer { li { svg,g,path {height: 40px;} width: 60px; margin: 0 0 40px 0;}}
+		footer { ul {transform: scale(.6);}}
 	}
 	@media (max-width: 500px)
 	{
 		body {
 			width:100%; height: 100%; min-width:100px; padding:0;
 			.main { h1 {font-size: 30px;} p {font-size: 18px;} 
-			.blog { svg,g,path {width: 45px; height: 35px;} } 
+			.blog { svg,g,path {width: 45px; height: 35px;}} 
 			}
-		} 
-		footer { li { svg,g,path {width: 35px;} width: 60px; margin: 0 0 70px 0;}}
+			footer { ul {transform: scale(.6);}}
+		}
+		
 	}
 	@keyframes example {
 		from {background-color: fill="rgb(177, 171, 171)"; opacity: 0;}
-		to {background-color: fill="rgb(177, 171, 171)" }
+		to {background-color: fill="rgb(177, 171, 171)"}
 	  }
 
 
