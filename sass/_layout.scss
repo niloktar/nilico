@@ -1,0 +1,153 @@
+body {
+	position: relative;
+	background-color: #000000;
+	font-family:$source-sans, $second-sans;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	list-style: none;
+		img {
+				position: absolute;
+				top: 0;
+				right: 0;
+				opacity: .1;
+				transition: .5s ease-in-out;
+			}
+			img:hover {
+				opacity: .3;
+			}
+		.main {
+			position: relative;
+			text-align: left;
+			margin-top: 400px;
+			float: left;
+			margin-left: 100px;
+			h1 {
+				font-family: $source-sans;
+				font-weight: 100;
+				font-size: 40px;
+				color: #ffff;
+				span {
+					text-transform: uppercase;
+				}
+			}
+			p {
+				font-family: $second-sans;
+				font-size: 24px;
+				color: #ffff;
+				padding-bottom: 20px;
+				position: relative;
+			}
+			.blog {
+				display: flex;
+				svg,g,path {
+					transition: .5s ease-in-out;
+					height: 50px;
+				}
+				a {
+					&:hover {
+						.microphone {
+							border: 1px solid #000000;
+							width: 70px;
+							height: 60px;
+							background-color: #000000;
+						}
+						.medium {
+							border: 1px solid #000000;
+							width: 80px;
+							height: 60px;
+							background-color: #000000;
+						}
+					}
+				}
+			}
+		}
+		.footer {
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+			.social {
+				align-items: center;
+				display: flex;
+				align-items: flex-end;
+				justify-content: center;
+				margin-bottom: 50px;
+				display: flex;
+				#instagram-gradient {
+					opacity: 0.0;
+					display: inline-block;
+					-webkit-transition: opacity .4s ease;
+					-moz-transition: opacity .4s ease;
+					-o-transition: opacity .4s ease;
+					transition: opacity .4s ease;
+				  }
+				  #github-gradient {
+					opacity: 0.0;
+					display: inline-block;
+					-webkit-transition: opacity .4s ease;
+					-moz-transition: opacity .4s ease;
+					-o-transition: opacity .4s ease;
+					transition: opacity .4s ease;
+				  }
+				  #youtube-gradient {
+					opacity: 0.0;
+					display: inline-block;
+					-webkit-transition: opacity .4s ease;
+					-moz-transition: opacity .4s ease;
+					-o-transition: opacity .4s ease;
+					transition: opacity .4s ease;
+				  }
+				svg,g,path {
+					transition: .4s ease-in-out;
+				}
+					a {
+						text-decoration: none;
+						padding: 20px;				  
+						&:hover {
+							#instagram-gradient {
+								opacity: 1.0;
+							  }
+							 #envelope {
+								fill: #F1961D;
+							}
+							#twitter {
+								fill: #1da1f2;
+							}
+							#linkedin {
+								fill: #0077B5;
+							}
+							#github-gradient{
+								opacity: 1.0;
+							  }
+							  #youtube-gradient {
+								opacity: 1.0;
+							  }
+						}
+					}
+				}
+			}
+	}
+	//media query
+	@media (max-width: 720px) 
+	{
+		body {
+			width:100%; height: 100%; min-width:100px; padding:0;
+			.main {
+				margin-left: 40px; h1 {font-size: 34px;} p {font-size: 20px;} 
+			.blog { svg,g,path { height: 45px;} } 
+			}
+		} 
+		footer { li { svg,g,path {height: 40px;} width: 60px; margin: 0 0 40px 0;}}
+	}
+	@media (max-width: 500px)
+	{
+		body {
+			width:100%; height: 100%; min-width:100px; padding:0;
+			.main { h1 {font-size: 30px;} p {font-size: 18px;} 
+			.blog { svg,g,path {width: 45px; height: 35px;} } 
+			}
+		} 
+		footer { li { svg,g,path {width: 35px;} width: 60px; margin: 0 0 70px 0;}}
+	}
+
+

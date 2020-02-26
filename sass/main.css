@@ -1,0 +1,237 @@
+@import url(//db.onlinewebfonts.com/c/9ecec61376083fd290b75d94fdaca380?family=Baskerville+Old+Face);
+@import url("https://fonts.googleapis.com/css?family=Karla&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input, button, textarea {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  outline: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+body {
+  position: relative;
+  background-color: #000000;
+  font-family: "Baskerville Old Face", "Ubuntu", sans-serif;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  list-style: none;
+}
+
+body img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: .1;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+body img:hover {
+  opacity: .3;
+}
+
+body .main {
+  position: relative;
+  text-align: left;
+  margin-top: 400px;
+  float: left;
+  margin-left: 100px;
+}
+
+body .main h1 {
+  font-family: "Baskerville Old Face";
+  font-weight: 100;
+  font-size: 40px;
+  color: #ffff;
+}
+
+body .main h1 span {
+  text-transform: uppercase;
+}
+
+body .main p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 24px;
+  color: #ffff;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+body .main .blog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .main .blog svg, body .main .blog g, body .main .blog path {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  height: 50px;
+}
+
+body .main .blog a:hover .microphone {
+  border: 1px solid #000000;
+  width: 70px;
+  height: 60px;
+  background-color: #000000;
+}
+
+body .main .blog a:hover .medium {
+  border: 1px solid #000000;
+  width: 80px;
+  height: 60px;
+  background-color: #000000;
+}
+
+body .footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+body .footer .social {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+  display: flex;
+}
+
+body .footer .social #instagram-gradient {
+  opacity: 0.0;
+  display: inline-block;
+  -webkit-transition: opacity .4s ease;
+  transition: opacity .4s ease;
+}
+
+body .footer .social #github-gradient {
+  opacity: 0.0;
+  display: inline-block;
+  -webkit-transition: opacity .4s ease;
+  transition: opacity .4s ease;
+}
+
+body .footer .social #youtube-gradient {
+  opacity: 0.0;
+  display: inline-block;
+  -webkit-transition: opacity .4s ease;
+  transition: opacity .4s ease;
+}
+
+body .footer .social svg, body .footer .social g, body .footer .social path {
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+body .footer .social a {
+  text-decoration: none;
+  padding: 20px;
+}
+
+body .footer .social a:hover #instagram-gradient {
+  opacity: 1.0;
+}
+
+body .footer .social a:hover #envelope {
+  fill: #F1961D;
+}
+
+body .footer .social a:hover #twitter {
+  fill: #1da1f2;
+}
+
+body .footer .social a:hover #linkedin {
+  fill: #0077B5;
+}
+
+body .footer .social a:hover #github-gradient {
+  opacity: 1.0;
+}
+
+body .footer .social a:hover #youtube-gradient {
+  opacity: 1.0;
+}
+
+@media (max-width: 720px) {
+  body {
+    width: 100%;
+    height: 100%;
+    min-width: 100px;
+    padding: 0;
+  }
+  body .main {
+    margin-left: 40px;
+  }
+  body .main h1 {
+    font-size: 34px;
+  }
+  body .main p {
+    font-size: 20px;
+  }
+  body .main .blog svg, body .main .blog g, body .main .blog path {
+    height: 45px;
+  }
+  footer li {
+    width: 60px;
+    margin: 0 0 40px 0;
+  }
+  footer li svg, footer li g, footer li path {
+    height: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    width: 100%;
+    height: 100%;
+    min-width: 100px;
+    padding: 0;
+  }
+  body .main h1 {
+    font-size: 30px;
+  }
+  body .main p {
+    font-size: 18px;
+  }
+  body .main .blog svg, body .main .blog g, body .main .blog path {
+    width: 45px;
+    height: 35px;
+  }
+  footer li {
+    width: 60px;
+    margin: 0 0 70px 0;
+  }
+  footer li svg, footer li g, footer li path {
+    width: 35px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
