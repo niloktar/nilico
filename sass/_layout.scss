@@ -22,7 +22,7 @@ body {
 				opacity: .3;
 			}
 		.main {
-			animation: example 5s;
+			animation: onload 5s;
 			position: relative;
 			text-align: left;
 			margin-top: 400px;
@@ -147,9 +147,8 @@ body {
 			}
 			footer { ul {transform: scale(.6);}}
 		}
-		
 	}
-	@keyframes example {
+	@keyframes onload {
 		from {background-color: fill="rgb(177, 171, 171)"; opacity: 0;}
 		to {background-color: fill="rgb(177, 171, 171)"}
 	  }

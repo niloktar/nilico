@@ -56,8 +56,8 @@ body img:hover {
 }
 
 body .main {
-  -webkit-animation: example 5s;
-          animation: example 5s;
+  -webkit-animation: onload 5s;
+          animation: onload 5s;
   position: relative;
   text-align: left;
   margin-top: 400px;
@@ -235,7 +235,7 @@ body footer .social a:hover #linkedin {
   }
 }
 
-@-webkit-keyframes example {
+@-webkit-keyframes onload {
   from {
     background-color: fill= "rgb(177, 171, 171)";
     opacity: 0;
@@ -245,7 +245,7 @@ body footer .social a:hover #linkedin {
   }
 }
 
-@keyframes example {
+@keyframes onload {
   from {
     background-color: fill= "rgb(177, 171, 171)";
     opacity: 0;
