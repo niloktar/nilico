@@ -1,6 +1,4 @@
-@import url(//db.onlinewebfonts.com/c/9ecec61376083fd290b75d94fdaca380?family=Baskerville+Old+Face);
-@import url("https://fonts.googleapis.com/css?family=Karla&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Abel&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -27,10 +25,17 @@ ul, ol {
   list-style: none;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   position: relative;
   background-color: #000000;
-  font-family: "Baskerville Old Face", "Ubuntu", sans-serif;
+  font-family: "Abel";
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -51,6 +56,8 @@ body img:hover {
 }
 
 body .main {
+  -webkit-animation: example 5s;
+          animation: example 5s;
   position: relative;
   text-align: left;
   margin-top: 400px;
@@ -59,10 +66,10 @@ body .main {
 }
 
 body .main h1 {
-  font-family: "Baskerville Old Face";
+  font-family: "Abel";
   font-weight: 100;
   font-size: 40px;
-  color: #ffff;
+  color: #e2e0e0;
 }
 
 body .main h1 span {
@@ -70,9 +77,8 @@ body .main h1 span {
 }
 
 body .main p {
-  font-family: "Ubuntu", sans-serif;
   font-size: 24px;
-  color: #ffff;
+  color: #9b9797;
   padding-bottom: 20px;
   position: relative;
 }
@@ -104,6 +110,8 @@ body .main .blog a:hover .medium {
 }
 
 body .footer {
+  -webkit-animation: example 5s;
+          animation: example 5s;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -126,30 +134,22 @@ body .footer .social {
   display: flex;
 }
 
-body .footer .social #instagram-gradient {
-  opacity: 0.0;
-  display: inline-block;
-  -webkit-transition: opacity .4s ease;
-  transition: opacity .4s ease;
+body .footer .social #linkedin, body .footer .social #envelope, body .footer .social #twitter {
+  opacity: .6;
 }
 
-body .footer .social #github-gradient {
-  opacity: 0.0;
-  display: inline-block;
-  -webkit-transition: opacity .4s ease;
-  transition: opacity .4s ease;
-}
-
+body .footer .social #instagram-gradient,
+body .footer .social #github-gradient,
 body .footer .social #youtube-gradient {
   opacity: 0.0;
   display: inline-block;
-  -webkit-transition: opacity .4s ease;
-  transition: opacity .4s ease;
+  -webkit-transition: opacity .5s ease;
+  transition: opacity .5s ease;
 }
 
 body .footer .social svg, body .footer .social g, body .footer .social path {
-  -webkit-transition: .4s ease-in-out;
-  transition: .4s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 body .footer .social a {
@@ -157,27 +157,24 @@ body .footer .social a {
   padding: 20px;
 }
 
-body .footer .social a:hover #instagram-gradient {
+body .footer .social a:hover #instagram-gradient,
+body .footer .social a:hover #github-gradient,
+body .footer .social a:hover #youtube-gradient {
   opacity: 1.0;
 }
 
 body .footer .social a:hover #envelope {
-  fill: #F1961D;
+  fill: #e0720c;
+  opacity: 1.0;
 }
 
 body .footer .social a:hover #twitter {
   fill: #1da1f2;
+  opacity: 1.0;
 }
 
 body .footer .social a:hover #linkedin {
   fill: #0077B5;
-}
-
-body .footer .social a:hover #github-gradient {
-  opacity: 1.0;
-}
-
-body .footer .social a:hover #youtube-gradient {
   opacity: 1.0;
 }
 
@@ -232,6 +229,26 @@ body .footer .social a:hover #youtube-gradient {
   }
   footer li svg, footer li g, footer li path {
     width: 35px;
+  }
+}
+
+@-webkit-keyframes example {
+  from {
+    background-color: fill= "rgb(177, 171, 171)";
+    opacity: 0;
+  }
+  to {
+    background-color: fill= "rgb(177, 171, 171)";
+  }
+}
+
+@keyframes example {
+  from {
+    background-color: fill= "rgb(177, 171, 171)";
+    opacity: 0;
+  }
+  to {
+    background-color: fill= "rgb(177, 171, 171)";
   }
 }
 /*# sourceMappingURL=main.css.map */

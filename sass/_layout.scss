@@ -1,7 +1,12 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 body {
 	position: relative;
 	background-color: #000000;
-	font-family:$source-sans, $second-sans;
+	font-family:$source-sans;
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
@@ -17,6 +22,7 @@ body {
 				opacity: .3;
 			}
 		.main {
+			animation: example 5s;
 			position: relative;
 			text-align: left;
 			margin-top: 400px;
@@ -26,15 +32,14 @@ body {
 				font-family: $source-sans;
 				font-weight: 100;
 				font-size: 40px;
-				color: #ffff;
+				color: #e2e0e0;
 				span {
 					text-transform: uppercase;
 				}
 			}
 			p {
-				font-family: $second-sans;
 				font-size: 24px;
-				color: #ffff;
+				color: #9b9797;
 				padding-bottom: 20px;
 				position: relative;
 			}
@@ -63,6 +68,7 @@ body {
 			}
 		}
 		.footer {
+			animation: example 5s;
 			position: fixed;
 			bottom: 0;
 			width: 100%;
@@ -73,55 +79,43 @@ body {
 				justify-content: center;
 				margin-bottom: 50px;
 				display: flex;
-				#instagram-gradient {
+				#linkedin, #envelope, #twitter {
+					opacity: .6;
+				}
+				#instagram-gradient,
+				#github-gradient,
+				#youtube-gradient {
 					opacity: 0.0;
 					display: inline-block;
-					-webkit-transition: opacity .4s ease;
-					-moz-transition: opacity .4s ease;
-					-o-transition: opacity .4s ease;
-					transition: opacity .4s ease;
-				  }
-				  #github-gradient {
-					opacity: 0.0;
-					display: inline-block;
-					-webkit-transition: opacity .4s ease;
-					-moz-transition: opacity .4s ease;
-					-o-transition: opacity .4s ease;
-					transition: opacity .4s ease;
-				  }
-				  #youtube-gradient {
-					opacity: 0.0;
-					display: inline-block;
-					-webkit-transition: opacity .4s ease;
-					-moz-transition: opacity .4s ease;
-					-o-transition: opacity .4s ease;
-					transition: opacity .4s ease;
+					-webkit-transition: opacity .5s ease;
+					-moz-transition: opacity .5s ease;
+					-o-transition: opacity .5s ease;
+					transition: opacity .5s ease;
 				  }
 				svg,g,path {
-					transition: .4s ease-in-out;
+					transition: .5s ease-in-out;
 				}
 					a {
 						text-decoration: none;
 						padding: 20px;				  
 						&:hover {
-							#instagram-gradient {
+							#instagram-gradient,
+							#github-gradient,
+							#youtube-gradient {
 								opacity: 1.0;
 							  }
 							 #envelope {
-								fill: #F1961D;
+								fill: rgb(224, 114, 12);
+								opacity: 1.0;
 							}
 							#twitter {
 								fill: #1da1f2;
+								opacity: 1.0;
 							}
 							#linkedin {
 								fill: #0077B5;
+								opacity: 1.0;
 							}
-							#github-gradient{
-								opacity: 1.0;
-							  }
-							  #youtube-gradient {
-								opacity: 1.0;
-							  }
 						}
 					}
 				}
@@ -149,5 +143,9 @@ body {
 		} 
 		footer { li { svg,g,path {width: 35px;} width: 60px; margin: 0 0 70px 0;}}
 	}
+	@keyframes example {
+		from {background-color: fill="rgb(177, 171, 171)"; opacity: 0;}
+		to {background-color: fill="rgb(177, 171, 171)" }
+	  }
 
 
