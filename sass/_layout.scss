@@ -38,9 +38,9 @@ body {
 				}
 			}
 			p {
+				padding-bottom: 20px;
 				font-size: 24px;
 				color: #9b9797;
-				padding-bottom: 20px;
 				position: relative;
 			}
 			.blog {
@@ -51,19 +51,11 @@ body {
 				}
 				a {
 					&:hover {
-						.microphone {
-							border: 1px solid #000000;
-							width: 70px;
-							height: 60px;
-							background-color: #000000;
-						}
-						.medium {
-							border: 1px solid #000000;
-							width: 80px;
-							height: 60px;
-							background-color: #000000;
+						.microphone,.medium {
+							transform: scale(1.2);
 						}
 					}
+
 				}
 			}
 		}
@@ -103,7 +95,7 @@ body {
 								opacity: 1.0;
 							  }
 							 #envelope {
-								fill: rgb(175, 100, 29);
+								fill: rgb(150, 87, 28);
 								opacity: 1.0;
 							}
 							#twitter {
@@ -111,7 +103,7 @@ body {
 								opacity: 1.0;
 							}
 							#linkedin {
-								fill: #0077B5;
+								fill: rgb(45, 87, 109);
 								opacity: 1.0;
 							}
 						}
