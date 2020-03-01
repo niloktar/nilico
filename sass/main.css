@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Abel&display=swap");
 * {
   padding: 0;
@@ -32,30 +33,36 @@ ul, ol {
           box-sizing: border-box;
 }
 
-body {
+html {
+  height: 100%;
+  width: 100%;
+}
+
+html body {
   position: relative;
   background-color: #000000;
-  font-family: "Abel";
+  font-family: "Abel", "Ubuntu";
   width: 100%;
   height: 100%;
+  margin: 0;
   overflow: hidden;
   list-style: none;
 }
 
-body img {
+html body::before {
+  content: "";
+  display: block;
   position: absolute;
-  top: 0;
   right: 0;
-  opacity: .1;
-  -webkit-transition: .6s ease-in-out;
-  transition: .6s ease-in-out;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  background: url(../img/background.jpg) center center no-repeat;
+  background-size: cover;
 }
 
-body img:hover {
-  opacity: .3;
-}
-
-body .main {
+html body .main {
   -webkit-animation: onload 5s;
           animation: onload 5s;
   position: relative;
@@ -65,42 +72,47 @@ body .main {
   margin-left: 100px;
 }
 
-body .main h1 {
+html body .main h1 {
   font-family: "Abel";
   font-weight: 100;
   font-size: 40px;
   color: #e2e0e0;
 }
 
-body .main h1 span {
+html body .main h1 span {
   text-transform: uppercase;
 }
 
-body .main p {
+html body .main p {
   padding-bottom: 20px;
+  font-family: "Ubuntu";
   font-size: 24px;
   color: #9b9797;
   position: relative;
 }
 
-body .main .blog {
+html body .main .blog {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body .main .blog svg, body .main .blog g, body .main .blog path {
-  -webkit-transition: .6s ease-in-out;
-  transition: .6s ease-in-out;
+html body .main .blog svg, html body .main .blog g, html body .main .blog path {
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
   height: 50px;
 }
 
-body .main .blog a:hover .microphone, body .main .blog a:hover .medium {
+html body .main .blog a:hover .microphone, html body .main .blog a:hover .medium {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
-body footer {
+html body .main .blog a:hover #microphone, html body .main .blog a:hover #medium {
+  fill: #e2e0e0;
+}
+
+html body footer {
   -webkit-animation: onload 5s;
           animation: onload 5s;
   position: fixed;
@@ -108,7 +120,7 @@ body footer {
   width: 100%;
 }
 
-body footer .social {
+html body footer .social {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -121,47 +133,47 @@ body footer .social {
   display: flex;
 }
 
-body footer .social #linkedin, body footer .social #envelope, body footer .social #twitter, body footer .social #github {
-  opacity: .6;
+html body footer .social #linkedin, html body footer .social #mail, html body footer .social #twitter, html body footer .social #github {
+  opacity: 0.6;
 }
 
-body footer .social #instagram-gradient,
-body footer .social #github-gradient,
-body footer .social #youtube-gradient {
+html body footer .social #instagram-gradient,
+html body footer .social #github-gradient,
+html body footer .social #youtube-gradient {
   opacity: 0.0;
   display: inline-block;
-  -webkit-transition: opacity .6s ease;
-  transition: opacity .6s ease;
+  -webkit-transition: opacity .55s ease;
+  transition: opacity .55s ease;
 }
 
-body footer .social svg, body footer .social g, body footer .social path {
-  -webkit-transition: .6s ease-in-out;
-  transition: .6s ease-in-out;
+html body footer .social svg, html body footer .social g, html body footer .social path {
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
 
-body footer .social a {
+html body footer .social a {
   text-decoration: none;
   padding: 20px;
 }
 
-body footer .social a:hover #instagram-gradient,
-body footer .social a:hover #github-gradient,
-body footer .social a:hover #youtube-gradient {
+html body footer .social a:hover #instagram-gradient,
+html body footer .social a:hover #github-gradient,
+html body footer .social a:hover #youtube-gradient {
   opacity: 1.0;
 }
 
-body footer .social a:hover #envelope {
-  fill: #96571c;
+html body footer .social a:hover #mail {
+  fill: #814711;
   opacity: 1.0;
 }
 
-body footer .social a:hover #twitter {
+html body footer .social a:hover #twitter {
   fill: #1da1f2;
   opacity: 1.0;
 }
 
-body footer .social a:hover #linkedin {
-  fill: #2d576d;
+html body footer .social a:hover #linkedin {
+  fill: #055885;
   opacity: 1.0;
 }
 
@@ -179,48 +191,71 @@ body footer .social a:hover #linkedin {
 }
 
 @media (max-width: 720px) {
-  body {
+  html {
+    width: 100%;
+    height: 100%;
+  }
+  html body {
     width: 100%;
     height: 100%;
     min-width: 100px;
+    min-height: 100%;
     padding: 0;
   }
-  body .main {
+  html body .main {
     margin-left: 40px;
   }
-  body .main h1 {
+  html body .main h1 {
     font-size: 34px;
   }
-  body .main p {
+  html body .main p {
     font-size: 20px;
   }
-  body .main .blog svg, body .main .blog g, body .main .blog path {
+  html body .main .blog svg, html body .main .blog g, html body .main .blog path {
     height: 45px;
   }
-  footer ul {
+  html footer ul {
     -webkit-transform: scale(0.6);
             transform: scale(0.6);
   }
 }
 
 @media (max-width: 500px) {
-  body {
+  html {
+    width: 100%;
+    height: 100%;
+  }
+  html body {
     width: 100%;
     height: 100%;
     min-width: 100px;
+    min-height: 100%;
     padding: 0;
+    background-color: #000000;
   }
-  body .main h1 {
+  html body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 1px;
+    top: 0px;
+    opacity: .3;
+    background: url(../img/mobil-bg.jpg) center center no-repeat;
+    -ms-background-size: cover;
+    background-size: cover;
+  }
+  html body .main h1 {
     font-size: 30px;
   }
-  body .main p {
+  html body .main p {
     font-size: 18px;
   }
-  body .main .blog svg, body .main .blog g, body .main .blog path {
+  html body .main .blog svg, html body .main .blog g, html body .main .blog path {
     width: 45px;
     height: 35px;
   }
-  body footer ul {
+  html body footer ul {
     -webkit-transform: scale(0.6);
             transform: scale(0.6);
   }
