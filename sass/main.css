@@ -65,11 +65,11 @@ html body::before {
 html body .main {
   -webkit-animation: onload 5s;
           animation: onload 5s;
-  position: relative;
-  text-align: left;
-  margin-top: 400px;
-  float: left;
-  margin-left: 100px;
+  position: absolute;
+  top: 50%;
+  left: 100px;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
   width: 100%;
 }
 
@@ -210,7 +210,7 @@ html body footer .social a:hover #linkedin {
     padding: 0;
   }
   html .main {
-    right: 56px;
+    left: 50px;
   }
   html .main h1 {
     font-size: 34px;
@@ -253,8 +253,7 @@ html body footer .social a:hover #linkedin {
     background-size: cover;
   }
   html body .main {
-    right: 82px;
-    bottom: 220px;
+    left: 50px;
   }
   html body .main h1 {
     font-size: 30px;
