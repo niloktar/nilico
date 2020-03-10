@@ -70,6 +70,7 @@ html body .main {
   margin-top: 400px;
   float: left;
   margin-left: 100px;
+  width: 100%;
 }
 
 html body .main h1 {
@@ -209,7 +210,7 @@ html body footer .social a:hover #linkedin {
     padding: 0;
   }
   html .main {
-    margin-left: 40px;
+    right: 56px;
   }
   html .main h1 {
     font-size: 34px;
@@ -251,11 +252,15 @@ html body footer .social a:hover #linkedin {
     -ms-background-size: cover;
     background-size: cover;
   }
+  html body .main {
+    right: 82px;
+    bottom: 142px;
+  }
   html body .main h1 {
     font-size: 30px;
   }
   html body .main p {
-    font-size: 18px;
+    font-size: 16px;
   }
   html body .main .blog svg, html body .main .blog g, html body .main .blog path {
     width: 45px;
