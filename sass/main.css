@@ -267,11 +267,8 @@ html body footer .social a:hover #linkedin {
     height: 35px;
   }
   html body footer ul {
-    -webkit-transform: scale(0.6);
-            transform: scale(0.6);
-  }
-  html body footer ul li {
-    padding: 0 10px;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
 }
 
