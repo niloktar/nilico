@@ -254,7 +254,7 @@ html body footer .social a:hover #linkedin {
   }
   html body .main {
     right: 82px;
-    bottom: 180px;
+    bottom: 230px;
   }
   html body .main h1 {
     font-size: 30px;
@@ -269,6 +269,9 @@ html body footer .social a:hover #linkedin {
   html body footer ul {
     -webkit-transform: scale(0.6);
             transform: scale(0.6);
+  }
+  html body footer ul li {
+    padding: 0 7px;
   }
 }
 
