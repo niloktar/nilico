@@ -68,7 +68,6 @@ html {
 								fill: #e2e0e0;
 							}
 						}
-	
 					}
 				}
 			}
@@ -127,6 +126,12 @@ html {
 }
 
 	//media query
+	@media (max-width: 1400px) 
+	{
+		html body::before {
+			background-position: left 89% center;
+		}
+	}
 	@media (max-width: 900px) 
 	{
 		body {
@@ -134,18 +139,18 @@ html {
 		footer { ul {transform: scale(.8);}}
 		}
 	}
-	@media (max-width: 720px) 
+	@media (max-width: 767px) 
 	{
 		html {width: 100%; height: 100%;
 		body {
 			width:100%; height: 100%; min-width:100px; min-height: 100%; padding:0;
+				}
 			.main {
 				margin-left: 40px; h1 {font-size: 34px;} p {font-size: 20px;} 
 			.blog { svg,g,path { height: 45px;} } 
 			}
 		} 
 		footer { ul {transform: scale(.6);}}
-	}
 	}
 	@media (max-width: 500px)
 	{
@@ -160,7 +165,7 @@ html {
 					height: 100%;
 					left: 1px;
 					top: 0px;
-					opacity: .3;
+					opacity: 0.3;
 					background: url(../img/mobil-bg.jpg) center center no-repeat;
 					-ms-background-size: cover;
 					-o-background-size: cover;

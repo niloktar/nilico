@@ -177,6 +177,12 @@ html body footer .social a:hover #linkedin {
   opacity: 1.0;
 }
 
+@media (max-width: 1400px) {
+  html body::before {
+    background-position: left 89% center;
+  }
+}
+
 @media (max-width: 900px) {
   body {
     width: 100%;
@@ -190,7 +196,7 @@ html body footer .social a:hover #linkedin {
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 767px) {
   html {
     width: 100%;
     height: 100%;
@@ -202,19 +208,19 @@ html body footer .social a:hover #linkedin {
     min-height: 100%;
     padding: 0;
   }
-  html body .main {
+  html .main {
     margin-left: 40px;
   }
-  html body .main h1 {
+  html .main h1 {
     font-size: 34px;
   }
-  html body .main p {
+  html .main p {
     font-size: 20px;
   }
-  html body .main .blog svg, html body .main .blog g, html body .main .blog path {
+  html .main .blog svg, html .main .blog g, html .main .blog path {
     height: 45px;
   }
-  html footer ul {
+  footer ul {
     -webkit-transform: scale(0.6);
             transform: scale(0.6);
   }
@@ -240,7 +246,7 @@ html body footer .social a:hover #linkedin {
     height: 100%;
     left: 1px;
     top: 0px;
-    opacity: .3;
+    opacity: 0.3;
     background: url(../img/mobil-bg.jpg) center center no-repeat;
     -ms-background-size: cover;
     background-size: cover;
