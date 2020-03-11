@@ -269,9 +269,6 @@ html body footer .social a:hover #linkedin {
     -webkit-transform: scale(0.6);
             transform: scale(0.6);
   }
-  html body footer ul li {
-    padding: 0 10px;
-  }
 }
 
 @-webkit-keyframes onload {
