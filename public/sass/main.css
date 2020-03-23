@@ -117,7 +117,7 @@ html body footer {
   -webkit-animation: onload 5s;
           animation: onload 5s;
   position: fixed;
-  bottom: 70px;
+  bottom: 120px;
   width: 100%;
 }
 
