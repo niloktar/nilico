@@ -1,91 +1,89 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
 
-<head>
-	<title>Nil OKTAR</title>
-	<link rel="stylesheet" type="text/css" href="sass/main.css" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" href="icon/N.ico">
-</head>
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/10.12.0/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/10.12.0/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/10.12.0/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/10.12.0/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/10.12.0/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/10.12.0/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/10.12.0/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/10.12.0/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/10.12.0/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/10.12.0/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
 
-<body>
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="/__/firebase/7.10.0/firebase-app.js"></script>
+    <style media="screen">
+      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      @media (max-width: 600px) {
+        body, #message { margin-top: 0; background: white; box-shadow: none; }
+        body { border-top: 16px solid #ffa100; }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="message">
+      <h2>Welcome</h2>
+      <h1>Firebase Hosting Setup Complete</h1>
+      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
+      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    </div>
+    <p id="load">Firebase SDK Loading&hellip;</p>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="/__/firebase/7.10.0/firebase-analytics.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const loadEl = document.querySelector('#load');
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.firestore().doc('/foo/bar').get().then(() => { });
+        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        // firebase.analytics(); // call to activate
+        // firebase.analytics().logEvent('tutorial_completed');
+        // firebase.performance(); // call to activate
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
-<!-- Initialize Firebase -->
-<script src="/__/firebase/init.js"></script>
-	<div class="main">
-		<div class="title">
-			<h1>Nil <span>oktar</span></h1>
-			<p>Project Manager - QA Tester</p>
-		</div>
-	</div>
-	<footer>
-			<ul class="social">
-				<li>
-					<a class="x" href="https://x.com/niloktar" target="_blank" rel="noopener">
-						<svg width="40" height="40" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path id="x" d="M25.2013 1.53735H30.108L19.388 13.7907L32 30.4614H22.1253L14.392 20.3494L5.54133 30.4614H0.632L12.0987 17.3547L0 1.53869H10.1253L17.116 10.7814L25.2013 1.53735ZM23.48 27.5254H26.1987L8.648 4.32002H5.73067L23.48 27.5254Z" fill="#F8F8F8"/>
-						</svg>
-					</a>
-				</li>
-				<li>
-					<a class="instagram" href="https://www.instagram.com/niiliko/" target="_blank" rel="noopener">
-						<svg xmlns="http://www.w3.org/2000/svg" width="42.792" height="38.179"
-							viewBox="0 0 42.792 38.179">
-							<defs>
-								<radialGradient id="instagram" gradientUnits="userSpaceOnUse" r="150%" cx="30%"
-									cy="107%">
-									<stop stop-color="#fdf497" offset="0" />
-									<stop stop-color="#fdf497" offset="0.05" />
-									<stop stop-color="#fd5949" offset="0.45" />
-									<stop stop-color="#d6249f" offset="0.6" />
-									<stop stop-color="#285AEB" offset="0.9" />
-								</radialGradient>
-								<mask id="instagram-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="512"
-									height="512">
-									<path
-										d="M10.7,2.25a9.39,9.39,0,0,0-9.454,9.3V31.129a9.39,9.39,0,0,0,9.454,9.3H34.588a9.39,9.39,0,0,0,9.454-9.3V11.55a9.39,9.39,0,0,0-9.454-9.3Zm0,2.937H34.588a6.478,6.478,0,0,1,4.588,1.85,6.266,6.266,0,0,1,1.881,4.513V31.129a6.266,6.266,0,0,1-1.881,4.513,6.478,6.478,0,0,1-4.588,1.85H10.7a6.478,6.478,0,0,1-4.588-1.85,6.266,6.266,0,0,1-1.881-4.513V11.55A6.266,6.266,0,0,1,6.117,7.037,6.478,6.478,0,0,1,10.7,5.187ZM34.588,8.613a1.958,1.958,0,1,0,1.99,1.958A1.99,1.99,0,0,0,34.588,8.613ZM22.646,11.061A10.389,10.389,0,0,0,12.2,21.34a10.451,10.451,0,0,0,20.9,0A10.389,10.389,0,0,0,22.646,11.061Zm0,2.937a7.343,7.343,0,1,1-7.464,7.342A7.381,7.381,0,0,1,22.646,14Z"
-										transform="translate(-1.25 -2.25)" fill="rgb(177, 171, 171)" />
-								</mask>
-							</defs>
-							<g mask="url(#instagram-mask)">
-								<rect x="0" y="0" width="512" height="512" fill="rgb(177, 171, 171)" />
-								<rect id="instagram-gradient" x="0" y="0" width="512" height="512"
-									fill="url(#instagram)" />
-							</g>
-						</svg>
-					</a>
-				</li>
-				<li>
-					<a class="medium"href="https://medium.com/@nilbagatur" target="_blank" rel="noopener">
-						<svg width="48" height="37" viewBox="0 0 45 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path id="medium" d="M0.631375 2.52526L5.50127 5.65734V25.5844L0.416573 30.4913C0.218821 30.6831 0.0836678 30.9279 0.0282047 31.1948C-0.0272584 31.4617 -0.00054021 31.7387 0.10498 31.9908C0.210501 32.2428 0.390085 32.4586 0.621021 32.6109C0.851957 32.7631 1.12387 32.845 1.40238 32.8461H12.4092C12.6877 32.845 12.9596 32.7631 13.1906 32.6109C13.4215 32.4586 13.6011 32.2428 13.7066 31.9908C13.8121 31.7387 13.8388 31.4617 13.7834 31.1948C13.7279 30.9279 13.5928 30.6831 13.395 30.4913L8.31031 25.5844V11.0757C13.5268 21.9241 18.6105 32.4813 18.4885 32.2408C18.6118 32.4804 18.8038 32.6797 19.0411 32.8142C19.2785 32.9487 19.5508 33.0126 19.8247 32.998C20.0986 32.9834 20.3622 32.8909 20.5831 32.732C20.8041 32.5731 20.9729 32.3546 21.0688 32.1033V32.0997C21.0691 32.0986 21.0691 32.0973 21.0688 32.0962C22.2875 28.8083 24.9015 21.7577 24.7349 22.2047C24.8288 21.951 29.2748 9.54087 29.3444 9.34806V27.2699L26.0798 30.5065C25.8855 30.6998 25.7538 30.9449 25.7014 31.2111C25.6489 31.4772 25.678 31.7526 25.7849 32.0027C25.8919 32.2528 26.0719 32.4664 26.3025 32.6168C26.5331 32.7672 26.804 32.8477 27.0812 32.8481H43.5955C43.8717 32.8474 44.1415 32.7672 44.3713 32.6175C44.6011 32.4678 44.7808 32.2553 44.888 32.0064C44.9952 31.7576 45.025 31.4833 44.9739 31.218C44.9228 30.9526 44.793 30.7078 44.6006 30.5141L41.4631 27.3704L41.3375 5.48839L44.5834 2.3563C44.7812 2.16451 44.9163 1.91968 44.9718 1.65278C45.0273 1.38588 45.0005 1.10888 44.895 0.856829C44.7895 0.604775 44.6099 0.388981 44.379 0.236737C44.148 0.0844937 43.8761 0.00263808 43.5976 0.00152217C42.2813 0.00152217 48.371 0.00152214 30.7152 0.00862553C28.9189 0.059364 29.5265 1.63885 23.2407 17.9279L15.5316 0.821457C15.4213 0.577243 15.2408 0.369614 15.0121 0.22379C14.7834 0.0779658 14.5163 0.000221482 14.2433 0H1.40394C1.10174 0.0010001 0.807881 0.0970473 0.565799 0.273947C0.323717 0.450847 0.146253 0.699214 0.0596344 0.982342C-0.0269843 1.26547 -0.0181624 1.56834 0.0847966 1.84619C0.187756 2.12403 0.379389 2.36212 0.631375 2.52526V2.52526ZM4.82989 30.0976L6.90527 28.0934L8.98066 30.0976H4.82989ZM32.1607 2.75256H40.1696C39.2715 3.73385 38.5176 4.02103 38.5212 4.9257L38.6546 27.9412C38.6582 28.8139 39.3877 29.1204 40.2557 30.0961H30.4495C31.4187 29.0199 32.1617 28.7261 32.1617 27.8331V2.75256H32.1607ZM13.3265 2.75256L21.8657 21.7044L19.5667 28.0254C7.98707 3.97384 8.39281 3.59584 6.10106 2.75256H13.3265Z" fill="white"/>
-						</svg>
-					</a>
-				</li>
-				<li>
-					<a class="mail" href="mailto:nilbagatur@gmail.com" target="_blank" rel="noopener">
-						<svg xmlns="http://www.w3.org/2000/svg" width="46.212" height="35.831" viewBox="0 0 46.212 35.831">
-							<path id="mail" d="M42.608,59.882H5.6a4.609,4.609,0,0,0-4.6,4.6V91.109a4.609,4.609,0,0,0,4.6,4.6h37a4.609,4.609,0,0,0,4.6-4.6V64.486A4.609,4.609,0,0,0,42.608,59.882Zm0,3.069a1.526,1.526,0,0,1,.588.114L31.114,74.924l-6.56,5.947L5.016,63.07a1.527,1.527,0,0,1,.588-.114Zm0,29.693H5.6a1.536,1.536,0,0,1-1.535-1.535v-24.8L23.548,84.062a1.537,1.537,0,0,0,2.011,0L44.142,66.313v24.8A1.536,1.536,0,0,1,42.608,92.644Z" transform="translate(-1 -59.882)" fill="rgb(177, 171, 171)"/>
-						</svg>
-					</a>
-				</li>
-				<li>
-					<a class="linkedin" href="https://www.linkedin.com/in/niloktar/" target="_blank" rel="noopener">
-						<svg xmlns="http://www.w3.org/2000/svg" width="46.393" height="46.393"
-							viewBox="0 0 46.393 46.393">
-							<path id="linkedin" d="M7.184,1.25a5.934,5.934,0,1,0,5.934,5.934A5.958,5.958,0,0,0,7.184,1.25Zm0,3.237a2.7,2.7,0,1,1-2.7,2.7A2.671,2.671,0,0,1,7.184,4.487Zm0,11.868A5.956,5.956,0,0,0,1.25,22.288v19.42a5.934,5.934,0,0,0,11.868,0V22.288A5.956,5.956,0,0,0,7.184,16.355Zm21.578,0a10.176,10.176,0,0,0-7.08,3.17,10.176,10.176,0,0,0-3.17,7.08v15.1a5.936,5.936,0,0,0,11.868,0V30.92a3.056,3.056,0,0,1,2.7-2.7,3.056,3.056,0,0,1,2.7,2.7V41.709a5.936,5.936,0,0,0,11.868,0V26.6a10.176,10.176,0,0,0-3.17-7.08,10.176,10.176,0,0,0-7.08-3.17ZM7.184,19.591a2.658,2.658,0,0,1,2.7,2.7v19.42a2.658,2.658,0,0,1-2.7,2.7,2.658,2.658,0,0,1-2.7-2.7V22.288A2.658,2.658,0,0,1,7.184,19.591Zm21.578,0h8.631a7.16,7.16,0,0,1,4.788,2.225A7.15,7.15,0,0,1,44.406,26.6v15.1a2.7,2.7,0,0,1-5.394,0V30.92a5.936,5.936,0,0,0-11.868,0V41.709a3.056,3.056,0,0,1-2.7,2.7,3.056,3.056,0,0,1-2.7-2.7V26.6a7.16,7.16,0,0,1,2.225-4.788A7.16,7.16,0,0,1,28.762,19.591Z"
-								transform="translate(-1.25 -1.25)" fill="rgb(177, 171, 171)" />
-						</svg>
-					</a>
-				</li>
-			</ul>
-	</footer>
-</body>
-
+        try {
+          let app = firebase.app();
+          let features = [
+            'auth', 
+            'database', 
+            'firestore',
+            'functions',
+            'messaging', 
+            'storage', 
+            'analytics', 
+            'remoteConfig',
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+  </body>
 </html>
